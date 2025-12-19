@@ -7,10 +7,10 @@
 
 .siteHeader,
 .siteFooter,
-.vk-mobile-nav-menu-btn {
+.vk-mobile-nav-menu-btn,
+.skip-link.screen-reader-text {
   display: none !important;
 }
-
 
 html {
   margin-top: 0 !important;
@@ -21,7 +21,7 @@ body {
   position: relative;
   font-family: $font-sans;
   font-size: var(--fz18);
-  font-weight: 400; // ※游ゴシックのときは500
+  font-weight: 500;
   line-height: 1.6;
   color: $color-body;
 }
@@ -52,8 +52,16 @@ body {
 
 main {
   display: block;
+  padding-top: 180px;
 
-  // for ipad portrait mode
+  @media (width <= 1180px) {
+    padding-top: 280px;
+  }
+
+  @include max-mq {
+    padding-top: 45vw;
+  }
+
 
   @media (min-width: 768px) and (max-width: 769px) and (orientation: portrait) {
     min-height: 95vh;
@@ -79,6 +87,12 @@ main {
 // ---------------------------------------------
 
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 1111111;
+  width: 100%;
+  background: #fff;
+
   .contents {
     display: flex;
     flex-wrap: wrap;
@@ -109,7 +123,7 @@ main {
 
   @media (width <= 1280px) {
     .contents {
-      row-gap: 15px;
+      gap: 15px;
       justify-content: center;
     }
   }
@@ -235,8 +249,7 @@ main {
   .contents {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   // .footer--logo
@@ -253,15 +266,24 @@ main {
     }
   }
 
+  // .footer--info
+  &--info {
+    @include max-mq {
+      text-align: center;
+    }
+  }
+
   // .footer--copy
   &--copy {
     padding: 10px;
     text-align: center;
   }
 
-  @include max-mq {
+  @media (width <= 1024px) {
     .contents {
+      flex-direction: column;
       gap: 30px;
+      align-items: center;
       margin-bottom: 40px;
     }
   }
