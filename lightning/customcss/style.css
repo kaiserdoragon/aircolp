@@ -729,6 +729,12 @@ main {
   background: #f06;
   border-radius: 1000px;
 }
+@media (max-width: 767px) {
+  .sign--catch {
+    width: 300px;
+    font-size: var(--fz20);
+  }
+}
 .sign h2 {
   margin-bottom: 60px;
   font-size: var(--fz40);
@@ -747,7 +753,7 @@ main {
   position: relative;
   box-sizing: border-box;
   max-width: 1000px;
-  padding: 40px;
+  padding: 25px;
   margin: auto;
   font-size: var(--fz23);
   background: #fff;
@@ -783,6 +789,78 @@ main {
   height: 227px;
   content: "";
   background: url(../airconimg/sign_person.png) no-repeat center center/contain;
+}
+@media (width <= 1280px) {
+  .sign--list::before {
+    right: auto;
+    bottom: -200px;
+    left: 50%;
+    width: 247px;
+    height: 227px;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 767px) {
+  .sign--list {
+    font-size: var(--fz18);
+  }
+}
+@media (width <= 1280px) {
+  .sign {
+    padding: 120px 0 200px;
+  }
+}
+@media (max-width: 767px) {
+  .sign h2 {
+    margin-bottom: 40px;
+    font-size: var(--fz30);
+  }
+  .sign h2 span {
+    font-size: var(--fz35);
+  }
+}
+
+.cvarea {
+  padding: 80px 0 0;
+}
+.cvarea .contents {
+  position: relative;
+}
+.cvarea .header--btns {
+  position: absolute;
+  bottom: 16%;
+  left: 8%;
+}
+.cvarea--bg {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .cvarea--bg {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (width <= 1280px) {
+  .cvarea .header--btns {
+    bottom: 10%;
+    left: 5%;
+  }
+}
+@media (width <= 1024px) {
+  .cvarea .header--btns {
+    bottom: 0%;
+  }
+}
+@media (max-width: 767px) {
+  .cvarea {
+    padding: 60px 0;
+  }
+  .cvarea .header--btns {
+    position: relative;
+    left: auto;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contact p {
