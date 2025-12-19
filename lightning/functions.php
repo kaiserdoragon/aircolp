@@ -588,6 +588,19 @@ add_action('wp_enqueue_scripts', function () {
 	$target_pages = array('cleaninglp', 'shuuri');
 
 	if (is_page($target_pages)) {
+		// --- Bootstrap関連を根こそぎ解除する ---
+		$bootstrap_handles = array(
+			'lightning-bootstrap',
+			'bootstrap-4',
+			'lightning-design-style', // Lightningのバージョンによってはこちら
+			'lightning-theme-style'
+		);
+
+		foreach ($bootstrap_handles as $handle) {
+			wp_dequeue_style($handle);
+			wp_deregister_style($handle);
+		}
+
 		// --- 既存CSSの解除 ---
 		wp_dequeue_style('reset-css');
 		wp_dequeue_style('custom-css-main');
@@ -627,3 +640,23 @@ add_action('wp_head', function () {
 <?php
 	}
 }, 99999);
+
+
+// 特定ページのみ、Bootstrapのタグ出力を無効化する
+add_filter('style_loader_tag', function ($tag, $handle) {
+	$target_pages = array('cleaninglp', 'shuuri');
+
+	// LPページかつ、ハンドル名に 'bootstrap' が含まれる場合は空文字を返す
+	if (is_page($target_pages) && strpos($handle, 'bootstrap') !== false) {
+		return '';
+	}
+	return $tag;
+}, 999, 2);
+
+
+// Contact Form 7で自動挿入されるPタグ、brタグを削除
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false()
+{
+	return false;
+}

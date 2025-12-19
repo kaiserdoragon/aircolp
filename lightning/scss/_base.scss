@@ -11,6 +11,7 @@
   display: none !important;
 }
 
+
 html {
   margin-top: 0 !important;
   font-size: 62.5%;
@@ -73,30 +74,6 @@ main {
   }
 }
 
-// グーグルマップ
-.googlemap {
-  position: relative;
-
-  &::before {
-    display: block;
-    padding-top: 46%; // 【マップの高さ】高さ/幅*100%
-    content: "";
-  }
-
-  iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  @include max-mq {
-    &::before {
-      padding-top: 450px;
-    }
-  }
-}
-
 // ---------------------------------------------
 //  ヘッダー関連 header
 // ---------------------------------------------
@@ -117,12 +94,30 @@ main {
     gap: 15px;
     align-items: center;
     justify-content: center;
+
+    @include max-mq {
+      gap: 5px;
+    }
+  }
+
+  // .header--logo
+  &--logo {
+    @media (width <= 427px) {
+      width: 70%;
+    }
   }
 
   @media (width <= 1280px) {
     .contents {
       row-gap: 15px;
       justify-content: center;
+    }
+  }
+
+  @include max-mq {
+    .contents {
+      row-gap: 10px;
+      padding: 25px 10px 20px;
     }
   }
 }
@@ -237,10 +232,37 @@ main {
   padding: 40px 0 0;
   border-top: 2px solid #b0b0b0;
 
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  // .footer--logo
+  &--logo {
+    a {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    @include max-mq {
+      a {
+        text-align: center;
+      }
+    }
+  }
+
   // .footer--copy
   &--copy {
     padding: 10px;
-    line-height: 1;
     text-align: center;
+  }
+
+  @include max-mq {
+    .contents {
+      gap: 30px;
+      margin-bottom: 40px;
+    }
   }
 }

@@ -64,16 +64,20 @@ Template Name: エアコンのクリーニングLP
     </div>
 </main>
 
+<div class="contents">
+    <?php echo apply_shortcodes('[contact-form-7 id="565" title="エアコンのクリーニングのフォーム"]'); ?>
+</div>
+
 <footer class="footer">
     <div class="contents -md">
-        <div>
+        <div class="footer--logo">
             <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
                 <picture>
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo_footer.avif" type="image/avif">
                     <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo_footer.webp" type="image/webp">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo_footer.png"
                         alt="株式会社トータルスマート"
-                        width="397" height="262"
+                        width="397" height="84"
                         fetchpriority="high"
                         decoding="async"
                         itemprop="logo">
@@ -88,8 +92,8 @@ Template Name: エアコンのクリーニングLP
         <div>
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/footer_catch.jpg" alt="" width="357" height="349" decoding="async">
         </div>
+        <p class="footer--copy"><small>Copyright© トータルスマート株式会社 All Rights Reserved.</small></p>
     </div>
-    <p class="footer--copy"><small>Copyright© トータルスマート株式会社 All Rights Reserved.</small></p>
 </footer>
 
 <?php get_footer(); ?>
