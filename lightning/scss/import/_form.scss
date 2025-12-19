@@ -204,5 +204,9 @@
         max-width: 80%;
       }
     }
+
+    @include max-mq {
+      margin: 30px auto 0;
+    }
   }
 }

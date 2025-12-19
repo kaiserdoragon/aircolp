@@ -312,6 +312,11 @@ table {
 .sec.-sm {
   padding: 80px 0;
 }
+@media (max-width: 767px) {
+  .sec {
+    padding: 80px 0;
+  }
+}
 
 .bg_blue {
   background: #1352c3;
@@ -1065,6 +1070,11 @@ main {
   .contact_form--btn input[type=button],
   .contact_form--btn button[type=submit] {
     max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .contact_form--btn {
+    margin: 30px auto 0;
   }
 }
 
