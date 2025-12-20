@@ -224,9 +224,188 @@ Template Name: エアコンのクリーニングLP
   <section class="case sec -sm">
     <div class="contents">
       <span class="sign--catch">エアコンクリーニングするとここまできれいになります</span>
-      <div class="ttl">施工事例</div>
+      <h2 class="ttl">施工事例</h2>
+      <div class="case--item">
+        <h3>まさか、この空気を吸っていたなんて…</h3>
+        <div class="case--inner">
+          <p>長年蓄積されたホコリと汚れで、フィルターが完全に目詰まりしていました。<br>
+            「最近、風がカビ臭い」「効きが悪い」と感じたら、<br class="is-hidden_sp">
+            内部はもっと汚れているサインかもしれません。<br>
+            プロの分解洗浄なら、ご家庭では落としきれない汚れもスッキリ除去。<br>
+            アレルギー対策や、小さなお子様のいるご家庭にもおすすめです。</p>
+          <div class="case--comparison">
+            <div class="case--before">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_02.jpg" alt="" width="380" height="400" decoding="async">
+              <p>BEFORE</p>
+            </div>
+            <div class="case--after">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_01.jpg" alt="" width="380" height="400" decoding="async">
+              <p>AFTER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case--item">
+        <h3>まさか、この空気を吸っていたなんて…</h3>
+        <div class="case--inner">
+          <p>長年蓄積されたホコリと汚れで、フィルターが完全に目詰まりしていました。<br>
+            「最近、風がカビ臭い」「効きが悪い」と感じたら、<br class="is-hidden_sp">
+            内部はもっと汚れているサインかもしれません。<br>
+            プロの分解洗浄なら、ご家庭では落としきれない汚れもスッキリ除去。<br>
+            アレルギー対策や、小さなお子様のいるご家庭にもおすすめです。</p>
+          <div class="case--comparison">
+            <div class="case--before">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_03.jpg" alt="" width="380" height="400" decoding="async">
+              <p>BEFORE</p>
+            </div>
+            <div class="case--after">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_04.jpg" alt="" width="380" height="400" decoding="async">
+              <p>AFTER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case--item">
+        <h3>黄ばみを一掃してお店の好感度アップ！</h3>
+        <div class="case--inner">
+          <p>
+            吹き出し口の黒カビや、全体的に茶色くくすんだ汚れは、<br class="is-hidden_sp">
+            長年のホコリと油煙が原因です。<br>
+            不潔な印象を与えるだけでなく、嫌なニオイの元凶にもなります。<br>
+            プロの洗浄技術なら、パネルの裏側から徹底クリーニング。<br>
+            お客様が心地よく過ごせる空間へと生まれ変わらせます。<br>
+          </p>
+          <div class="case--comparison">
+            <div class="case--before">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_05.jpg" alt="" width="380" height="400" decoding="async">
+              <p>BEFORE</p>
+            </div>
+            <div class="case--after">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_06.jpg" alt="" width="380" height="400" decoding="async">
+              <p>AFTER</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <section class="voice sec bg_skyblue">
+    <div class="contents">
+      <h2 class="ttl">お客様からの評価も頂いています</h2>
+      <div class="voice--inner">
+        <div class="voice--item">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/voice_01.jpg" alt="" width="380" height="200" decoding="async">
+          <div>
+            <h3>オフィスの空気が一気に軽くなりました</h3>
+            <span>名古屋市　IT企業　A様</span>
+          </div>
+          <p>クリーニング後は同じ設定温度でもムラなく冷え、
+            会議室のこもったニオイも解消。<br>
+            社員から「空気が変わった」と好評で、
+            来客対応にも自信が持てるようになりました。</p>
+        </div>
+        <div class="voice--item">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/voice_02.jpg" alt="" width="380" height="200" decoding="async">
+          <div>
+            <h3>「前より居心地がいい」と言われました</h3>
+            <span>岐阜市　飲食店　I様</span>
+          </div>
+          <p>油煙まじりの風がサラッと変わり、客席の
+            カビっぽさもなくなりました。営業前後の
+            冷暖房効率も上がり、ピークタイムでも安定
+            して快適な温度を保てています。</p>
+        </div>
+        <div class="voice--item">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/voice_03.jpg" alt="" width="380" height="200" decoding="async">
+          <div>
+            <h3>「清潔感が増した」と評判です</h3>
+            <span>四日市市　クリニック　T様</span>
+          </div>
+          <p>天井カセットを分解洗浄してもらったところ、
+            見えない内部の汚れに驚きました。<br>
+            クリーニング後は空気がすっきりし、
+            患者様やスタッフからも好印象の声が
+            増えています。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="flow sec">
+    <div class="contents">
+      <h2 class="ttl">エアコンクリーニングの流れ</h2>
+      <ol>
+        <li>
+          <span>
+            STEP1
+          </span>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_01.jpg" alt="" width="180" height="100" decoding="async">
+            <dl>
+              <dt>エアコンの分解</dt>
+              <dd>パーツを分解して<br class="is-hidden_sp">
+                いきます。</dd>
+            </dl>
+          </div>
+        </li>
+        <li>
+          <span>
+            STEP2
+          </span>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_02.jpg" alt="" width="180" height="100" decoding="async">
+            <dl>
+              <dt>ホコリ除去</dt>
+              <dd>ホコリや汚れを<br class="is-hidden_sp">
+                除去します。</dd>
+            </dl>
+          </div>
+        </li>
+        <li>
+          <span>
+            STEP3
+          </span>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_03.jpg" alt="" width="180" height="100" decoding="async">
+            <dl>
+              <dt>エアコン内部洗浄</dt>
+              <dd>高圧洗浄機で<br class="is-hidden_sp">
+                きれいにします。</dd>
+            </dl>
+          </div>
+        </li>
+        <li>
+          <span>
+            STEP4
+          </span>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_04.jpg" alt="" width="180" height="100" decoding="async">
+            <dl>
+              <dt>パーツの汚れ除去</dt>
+              <dd>分解したパーツも<br class="is-hidden_sp">
+                洗浄します。</dd>
+            </dl>
+          </div>
+        </li>
+        <li>
+          <span>
+            STEP5
+          </span>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_05.jpg" alt="" width="180" height="100" decoding="async">
+            <dl>
+              <dt>最終確認</dt>
+              <dd>正常に動くかの<br class="is-hidden_sp">
+                最終確認をします。</dd>
+            </dl>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
 
   <section class="contact sec" id="contact">
     <div class="contents">
