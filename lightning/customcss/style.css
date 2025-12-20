@@ -455,16 +455,16 @@ body {
 
 main {
   display: block;
-  padding-top: 180px;
+  padding-top: 150px;
 }
 @media (width <= 1180px) {
   main {
-    padding-top: 280px;
+    padding-top: 250px;
   }
 }
 @media (max-width: 767px) {
   main {
-    padding-top: 45vw;
+    padding-top: 43%;
   }
 }
 @media (min-width: 768px) and (max-width: 769px) and (orientation: portrait) {
@@ -498,7 +498,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 40px min(4vw, 25px);
+  padding: 25px min(4vw, 25px);
 }
 .header--btns {
   display: flex;
@@ -809,6 +809,11 @@ main {
   .sign--list {
     font-size: var(--fz18);
   }
+  .sign--list::before {
+    bottom: -100px;
+    width: 160px;
+    height: 140px;
+  }
 }
 @media (width <= 1280px) {
   .sign {
@@ -816,6 +821,9 @@ main {
   }
 }
 @media (max-width: 767px) {
+  .sign {
+    padding: 80px 0 100px;
+  }
   .sign h2 {
     margin-bottom: 40px;
     font-size: var(--fz30);
