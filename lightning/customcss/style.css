@@ -758,7 +758,7 @@ main {
   position: relative;
   box-sizing: border-box;
   max-width: 1000px;
-  padding: 25px;
+  padding: 40px;
   margin: auto;
   font-size: var(--fz23);
   background: #fff;
@@ -866,6 +866,78 @@ main {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.select h2 {
+  margin-bottom: 60px;
+  font-size: var(--fz40);
+  font-weight: 900;
+  color: #004ba6;
+  text-align: center;
+}
+.select h2 img {
+  vertical-align: baseline;
+}
+.select h2 span {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  font-size: var(--fz65);
+  line-height: 1.2;
+  color: #fff700;
+  text-align: center;
+  background: #004ba6;
+  border-radius: 50%;
+}
+.select ol {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+  margin: auto;
+  counter-reset: num; /* カウンターを初期化 */
+}
+.select ol img {
+  width: 100%;
+  object-fit: cover;
+}
+.select ol p {
+  padding: 15px;
+}
+.select h3 {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: var(--fz25);
+  font-weight: 800;
+  color: #fff;
+  counter-increment: num;
+  background: #004ba6;
+}
+.select h3::before {
+  position: relative;
+  top: -3px;
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #004ba6;
+  content: "POINT" counter(num, decimal-leading-zero);
+  background: #fff700;
+  border-radius: 5px;
+}
+.select .contents {
+  width: min(900px, 100%);
+}
+
+.case {
+  background: #fffee4;
+}
+.case .sign--catch {
+  width: fit-content;
+  padding: 15px 30px;
+  border: 3px solid #fff;
 }
 
 .contact p {

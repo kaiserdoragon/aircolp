@@ -86,7 +86,7 @@ Template Name: エアコンのクリーニングLP
       <h2>
         <picture>
           <source media="(max-width: 767px)" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/lead_txt_sp.png">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/lead_txt.png" alt="愛知県・岐阜県・三重県・静岡県なら最短当日・即日での訪問も可能です。" width="621" height="114">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/lead_txt.png" alt="愛知県・岐阜県・三重県・静岡県なら最短当日・即日での訪問も可能です。" width="621" height="114" decoding="async">
         </picture>
       </h2>
       <div class="lead--inner">
@@ -102,10 +102,7 @@ Template Name: エアコンのクリーニングLP
                 <picture>
                   <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.avif" type="image/avif">
                   <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.png"
-                    alt="お電話でのご相談はこちら: 052-932-5450"
-                    width="355" height="90"
-                    decoding="async">
+                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.png" alt="お電話でのご相談はこちら: 052-932-5450" width="355" height="90" decoding="async">
                 </picture>
               </a>
             </div>
@@ -114,10 +111,7 @@ Template Name: エアコンのクリーニングLP
                 <picture>
                   <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.avif" type="image/avif">
                   <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.png"
-                    alt="メールでお問い合わせ"
-                    width="355" height="90"
-                    decoding="async">
+                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.png" alt="メールでお問い合わせ" width="355" height="90" decoding="async">
                 </picture>
               </a>
             </div>
@@ -154,7 +148,7 @@ Template Name: エアコンのクリーニングLP
     <div class="contents">
       <picture>
         <source media="(max-width: 767px)" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/cvarea_sp.png">
-        <img class="cvarea--bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/cvarea.png" alt="エアコンクリーニングならトータルスマートにお任せください" width="1366" height="618">
+        <img class="cvarea--bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/cvarea.png" alt="エアコンクリーニングならトータルスマートにお任せください" width="1366" height="618" decoding="async">
       </picture>
       <div class="header--btns">
         <div class="header--btn-item">
@@ -182,6 +176,55 @@ Template Name: エアコンのクリーニングLP
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="select sec">
+    <div class="contents">
+      <h2>
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_logo.png" alt="株式会社トータルスマート" width="401" height="44" decoding="async">が<br>選ばれる<span>4</span>つの理由
+      </h2>
+
+      <ol>
+        <li>
+          <h3>
+            確かな技術力・品質
+          </h3>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_01.jpg" alt="" width="400" height="250" decoding="async">
+          <p>エアコン本体を分解し、アルミフィン・送風ファン・ドレンパンなど自分では触れない内部まで徹底洗浄します。
+            お掃除機能付きエアコンにも対応しているので、ご自宅の機種も安心してお任せください。</p>
+        </li>
+        <li>
+          <h3>
+            明確な料金体系
+          </h3>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_02.jpg" alt="" width="400" height="250" decoding="async">
+          <p>1台だけのご依頼から、複数台のご依頼まで、台数ごとのお得なセット料金をご用意しています。
+            お掃除機能付きや室外機洗浄など、追加オプションも事前に料金をお伝えするため、当日になって突然金額が増えることはありません。</p>
+        </li>
+        <li>
+          <h3>
+            スピード対応
+          </h3>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_03.jpg" alt="" width="400" height="250" decoding="async">
+          <p>移動時間を含めたスケジュール調整がしやすく、繁忙期を除けば最短当日〜数日以内のご訪問が可能です。</p>
+        </li>
+        <li>
+          <h3>
+            安心・安全への配慮
+          </h3>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_04.jpg" alt="" width="400" height="250" decoding="async">
+          <p>作業中の思わぬトラブルにも備え、損害賠償保険に加入しています。
+            室内はビニールシートでしっかり養生し、壁や床・家具に水や汚れが飛び散らないよう配慮して作業します。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="case sec -sm">
+    <div class="contents">
+      <span class="sign--catch">エアコンクリーニングするとここまできれいになります</span>
+      <div class="ttl">施工事例</div>
     </div>
   </section>
 
