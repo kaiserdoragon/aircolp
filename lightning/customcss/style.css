@@ -1111,6 +1111,114 @@ main {
   margin-bottom: 15px;
 }
 
+.use .ttl {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.use ol {
+  max-width: 1000px;
+  margin: auto; /* カウンターを初期化 */
+  counter-reset: num;
+}
+.use li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  padding: 30px;
+  background: #fff;
+}
+.use li:not(:last-child) {
+  margin-bottom: 60px;
+}
+.use h3 {
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: var(--fz25);
+  font-weight: 800;
+  color: #007bf8;
+  counter-increment: num;
+  border-bottom: 1px solid #007bf8;
+}
+.use h3::before {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: var(--fz20);
+  font-weight: 900;
+  color: #fff;
+  content: "STEP" counter(num, decimal-leading-zero);
+  background: #007bf8;
+  border-radius: 5px;
+}
+.use--txt {
+  width: 65%;
+}
+
+.region img {
+  display: block;
+  margin: 0 auto 60px;
+}
+.region dl div {
+  padding: 40px 30px;
+  border: 4px solid #004ba6;
+  box-shadow: 6.293px 7.771px 25px 0 rgba(0, 42, 93, 0.4);
+}
+.region dl div:not(:last-child) {
+  margin-bottom: 40px;
+}
+.region dt {
+  position: relative;
+  width: 180px;
+  padding: 8px 0;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  font-size: var(--fz23);
+  color: #fff;
+  text-align: center;
+  background: #007bf8;
+  border-radius: 1000px;
+}
+.region dt::before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 18px;
+  height: 26px;
+  content: "";
+  background: url(../airconimg/icon_map.png) no-repeat center center/contain;
+  transform: translateY(-50%);
+}
+.region dd {
+  line-height: 1.8;
+}
+
+.faq dt {
+  padding: 30px;
+  font-size: var(--fz20);
+  font-weight: 800;
+  color: #fff;
+  background: #007bf8;
+}
+.faq dt::before {
+  font-size: var(--fz23);
+  content: "Q.";
+}
+.faq dd {
+  padding: 30px 30px 30px 70px;
+  text-indent: -23px;
+  background: #fff;
+}
+.faq dd::before {
+  font-size: var(--fz20);
+  content: "A.";
+}
+.faq dl div:nth-of-type(4) ul {
+  margin-top: 10px;
+  line-height: 1.8;
+  text-indent: 0;
+}
+
 .contact p {
   margin-bottom: 80px;
   font-size: var(--fz20);

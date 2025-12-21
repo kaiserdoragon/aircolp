@@ -406,6 +406,187 @@ Template Name: エアコンのクリーニングLP
     </div>
   </section>
 
+  <section class="use bg_blue sec">
+    <div class="contents">
+      <h2 class="ttl">ご利用の流れ</h2>
+      <ol>
+        <li>
+          <div class="use--txt">
+            <h3>お問い合わせ</h3>
+            <p>サービスの詳細、気になっている汚れやお掃除したい箇所についてなど、
+              お電話またはメールフォームにてお気軽にお問い合わせください。</p>
+          </div>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_01.jpg" alt="" width="250" height="250" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="use--txt">
+            <h3>ヒアリング</h3>
+            <p>
+              お見積り訪問日時などを相談させていただきます。<br>
+              ご希望のサービス内容を詳しくお伺いし、お掃除・お手伝いする
+              箇所の確認をいたします。
+            </p>
+          </div>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_02.jpg" alt="" width="250" height="250" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="use--txt">
+            <h3>お見積りご提示</h3>
+            <p>
+              担当スタッフが訪問し、お掃除対象箇所を確認後無料でお見積りを
+              ご提示します。<br>
+              お掃除の際の注意事項などもご説明します。
+            </p>
+          </div>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_03.jpg" alt="" width="250" height="250" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="use--txt">
+            <h3>スケジュールの相談</h3>
+            <p>お見積りから正式にご依頼をいただいたのち、サービス実施日時やスケジュールについて相談させていただきます。</p>
+          </div>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_04.jpg" alt="" width="250" height="250" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="use--txt">
+            <h3>サービス実施</h3>
+            <p>担当スタッフが訪問し、サービスを実施します。お見積り以上の請求が発生することはありませんが、追加のご要望などがあれば請求額が変わる場合もございます。</p>
+          </div>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_05.jpg" alt="" width="250" height="250" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="use--txt">
+            <h3>お支払い</h3>
+            <p>お支払い方法は現金・銀行振込・クレジットカードがご利用いただけます。 <br>
+              銀行振込をご利用の場合の振込先はお見積りの際にご案内いたします。</p>
+          </div>
+          <div>
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_06.jpg" alt="" width="250" height="250" decoding="async">
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+  <section class="region sec">
+    <div class="contents -md">
+      <h2 class="ttl">対応エリア</h2>
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/map.png" alt="" width="518" height="534" decoding="async">
+      <dl>
+        <div>
+          <dt>
+            愛知エリア
+          </dt>
+          <dd>
+            名古屋市（天白区・北区・昭和区・千種区・中区・中川区・西区・東区・瑞穂区・緑区・南区・港区・名東区・守山区）・
+            愛西市・あま市・安城市・一宮市・稲沢市・大府市・岡崎市・尾張旭市・春日井市・刈谷市・北名古屋市・清須市・江南市・
+            小牧市・瀬戸市・高浜市・知多市・知立市・津島市・東海市・常滑市・豊明市・豊田市・長久手市・西尾市・日進市・半田市・
+            碧南市・みよし市・弥富市・東郷町・大治町・蟹江町・阿久比町・美浜町・扶桑町・新城市・豊川市・豊橋市・蒲郡市・幸田町
+          </dd>
+        </div>
+        <div>
+          <dt>
+            岐阜エリア
+          </dt>
+          <dd>
+            岐阜市・羽島市・各務原市・山県市・瑞穂市・本巣市・羽島郡・本巣郡・大垣市・海津市・養老郡・不破郡・安八郡・揖斐郡・
+            関市・美濃市・美濃加茂市・可児市・多治見市・瑞浪市・恵那市
+          </dd>
+        </div>
+        <div>
+          <dt>
+            三重エリア
+          </dt>
+          <dd>
+            桑名市・いなべ市・木曽岬町・東員町・四日市市・朝日町・川越町・鈴鹿市・亀山市・津市・松阪市・多気町・明和町・大台町・伊勢市・
+            鳥羽市・志摩市・玉城町・度会町・伊賀市・名張市
+          </dd>
+        </div>
+        <div>
+          <dt>
+            静岡エリア
+          </dt>
+          <dd>
+            浜松市・磐田市・掛川市・袋井市・湖西市・御前崎市・菊川市・森町・静岡市・島田市・焼津市・藤枝市・牧之原市・吉田町・
+            川根本町・沼津市・熱海市・三島市・富士宮市・伊東市・富士市・御殿場市・裾野市・伊豆市・伊豆の国市・函南町・清水町・
+            長泉町・小山町・下田市・東伊豆町・河津町・南伊豆町・松崎町・西伊豆町
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+
+  <section class="faq sec bg_skyblue">
+    <div class="contents -md">
+      <h2 class="ttl">よくある質問</h2>
+
+      <dl>
+        <div>
+          <dt>
+            表示されている料金以外に、追加でかかる費用はありますか？
+          </dt>
+          <dd>
+            エアコン本体の料金＋オプション（ご希望時のみ）が総額です。<br>
+            出張費・基本的な養生・洗浄作業料はすべて含まれています。<br>
+            勝手に追加請求することは一切ございません。<br>
+            お客様にとって一番負担の少ない方法をご提案し、無理な工事を押しつけることもありません。
+          </dd>
+        </div>
+        <div>
+          <dt>
+            支払い方法は何がありますか？
+          </dt>
+          <dd>
+            お支払い方法はキャッシュレス決済、現金、お振り込みからお選びいただけます。<br>
+            基本的にはクリーニング当日にお支払いをお願いしております。
+          </dd>
+        </div>
+        <div>
+          <dt>
+            キャンセル料はかかりますか？
+          </dt>
+          <dd>
+            お見積りをした後でも、納得がいかなければキャンセルいただけます。<br>
+            作業着手前のキャンセルに関しては代金をいただいておりません。
+          </dd>
+        </div>
+        <div>
+          <dt>
+            事前に準備しておくことはありますか？
+          </dt>
+          <dd>
+            下記のご協力をお願いしています。
+            <ul>
+              <li>・エアコンの真下や周辺にある小物・壊れやすいものの移動</li>
+              <li>・作業スペースとして1〜2畳ほどの空きスペースの確保</li>
+              <li>・お風呂場またはベランダなど、部品洗浄に使用できる場所のご提供</li>
+            </ul>
+          </dd>
+        </div>
+        <div>
+          <dt>
+            猫や犬などのペットがいますが大丈夫ですか？
+          </dt>
+          <dd>
+            エアコンクリーニングなどの作業には基本的にはオーガニック洗剤を使用しています<br>
+            安心して下さい。
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
 
   <section class="contact sec" id="contact">
     <div class="contents">
