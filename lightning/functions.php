@@ -610,7 +610,7 @@ add_action('wp_enqueue_scripts', function () {
 		// --- JSの追加（defer ＋ footer両方指定） ---
 		wp_enqueue_script(
 			'custom-page-js',
-			esc_url(get_template_directory_uri() . '/customjs/scripts.js'),
+			esc_url(get_template_directory_uri() . '/cleaninglp/js/scripts.js'),
 			array('jquery'),
 			'1.0.0',
 			array(
@@ -632,10 +632,10 @@ add_action('wp_head', function () {
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-		<link rel='stylesheet' id='reset-css-last' href='<?php echo esc_url($template_uri . '/customcss/reset.css'); ?>' media='all' />
-		<link rel="preload" id="custom-css-last" href="<?php echo esc_url($template_uri . '/customcss/style.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
+		<link rel='stylesheet' id='reset-css-last' href='<?php echo esc_url($template_uri . '/cleaninglp/css/reset.css'); ?>' media='all' />
+		<link rel="preload" id="custom-css-last" href="<?php echo esc_url($template_uri . '/cleaninglp/css/style.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
 		<noscript>
-			<link rel="stylesheet" href="<?php echo esc_url($template_uri . '/customcss/style.css'); ?>">
+			<link rel="stylesheet" href="<?php echo esc_url($template_uri . '/cleaninglp/style.css'); ?>">
 		</noscript>
 <?php
 	}
