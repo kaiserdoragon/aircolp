@@ -79,9 +79,10 @@ table {
   border-bottom: 1px solid #1352c3;
 
   @include max-mq {
-    padding: 0 30px 5px;
+    padding: 0 20px 5px;
     margin: 0 auto 40px;
     font-size: var(--fz30);
+    text-align: center;
   }
 }
 

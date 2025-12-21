@@ -179,6 +179,34 @@ Template Name: エアコンのクリーニングLP
     </div>
   </section>
 
+  <section class="merit sec bg_skyblue">
+    <div class="contents -md">
+      <h2>エアコンクリーニングをする<br><span>5</span>つのメリット</h2>
+      <ul>
+        <li>
+          <p>不具合の<br>早期発見</p>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_01.jpg" alt="" width="300" height="300">
+        </li>
+        <li>
+          <p>大きな故障の<br>防止</p>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_02.jpg" alt="" width="300" height="300">
+        </li>
+        <li>
+          <p>電気代の<br>削減</p>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_03.jpg" alt="" width="300" height="300">
+        </li>
+        <li>
+          <p>エアコンの<br>寿命UP</p>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_04.jpg" alt="" width="300" height="300">
+        </li>
+        <li>
+          <p>エアコンの<br>機能安定</p>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_05.jpg" alt="" width="300" height="300">
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <section class="select sec">
     <div class="contents">
       <h2>
@@ -246,13 +274,15 @@ Template Name: エアコンのクリーニングLP
         </div>
       </div>
       <div class="case--item">
-        <h3>まさか、この空気を吸っていたなんて…</h3>
+        <h3>その黒ずみ、お客様に見られています。</h3>
         <div class="case--inner">
-          <p>長年蓄積されたホコリと汚れで、フィルターが完全に目詰まりしていました。<br>
-            「最近、風がカビ臭い」「効きが悪い」と感じたら、<br class="is-hidden_sp">
-            内部はもっと汚れているサインかもしれません。<br>
-            プロの分解洗浄なら、ご家庭では落としきれない汚れもスッキリ除去。<br>
-            アレルギー対策や、小さなお子様のいるご家庭にもおすすめです。</p>
+          <p>
+            エアコンの吹き出し口が黒く汚れていませんか？<br>
+            それはホコリとカビが結合した頑固な汚れです。<br>
+            大切なお客様に「不潔」な印象を与えかねません。<br>
+            プロの技術でパーツを分解・洗浄すれば、見違えるような白さと清潔さが復活。<br>
+            「空気が澄んで、お店が明るくなった！」と、オーナー様からも好評です。
+          </p>
           <div class="case--comparison">
             <div class="case--before">
               <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_03.jpg" alt="" width="380" height="400" decoding="async">
@@ -413,16 +443,18 @@ Template Name: エアコンのクリーニングLP
         <li>
           <div class="use--txt">
             <h3>お問い合わせ</h3>
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_01.jpg" alt="" width="250" height="250" decoding="async">
             <p>サービスの詳細、気になっている汚れやお掃除したい箇所についてなど、
               お電話またはメールフォームにてお気軽にお問い合わせください。</p>
           </div>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_01.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_01.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>ヒアリング</h3>
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_02.jpg" alt="" width="250" height="250" decoding="async">
             <p>
               お見積り訪問日時などを相談させていただきます。<br>
               ご希望のサービス内容を詳しくお伺いし、お掃除・お手伝いする
@@ -430,12 +462,13 @@ Template Name: エアコンのクリーニングLP
             </p>
           </div>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_02.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_02.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>お見積りご提示</h3>
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_03.jpg" alt="" width="250" height="250" decoding="async">
             <p>
               担当スタッフが訪問し、お掃除対象箇所を確認後無料でお見積りを
               ご提示します。<br>
@@ -443,35 +476,38 @@ Template Name: エアコンのクリーニングLP
             </p>
           </div>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_03.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_03.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>スケジュールの相談</h3>
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_04.jpg" alt="" width="250" height="250" decoding="async">
             <p>お見積りから正式にご依頼をいただいたのち、サービス実施日時やスケジュールについて相談させていただきます。</p>
           </div>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_04.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_04.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>サービス実施</h3>
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_05.jpg" alt="" width="250" height="250" decoding="async">
             <p>担当スタッフが訪問し、サービスを実施します。お見積り以上の請求が発生することはありませんが、追加のご要望などがあれば請求額が変わる場合もございます。</p>
           </div>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_05.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_05.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>お支払い</h3>
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_06.jpg" alt="" width="250" height="250" decoding="async">
             <p>お支払い方法は現金・銀行振込・クレジットカードがご利用いただけます。 <br>
               銀行振込をご利用の場合の振込先はお見積りの際にご案内いたします。</p>
           </div>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_06.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_06.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
       </ol>
