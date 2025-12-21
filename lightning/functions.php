@@ -585,7 +585,7 @@ add_action('embed_head', 'lightning_embed_styles');
 // ---------------------------------------------
 // 1. 特定のページ（cleaninglp, shuuri）の制御
 add_action('wp_enqueue_scripts', function () {
-	$target_pages = array('cleaninglp', 'shuuri');
+	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
 
 	if (is_page($target_pages)) {
 		// --- Bootstrap関連を根こそぎ解除する ---
@@ -623,7 +623,7 @@ add_action('wp_enqueue_scripts', function () {
 
 // 2. 特定のページ（cleaninglp, shuuri）の <head> 内出力（CSS用）
 add_action('wp_head', function () {
-	$target_pages = array('cleaninglp', 'shuuri');
+	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
 
 	if (is_page($target_pages)) {
 		$template_uri = get_template_directory_uri();
@@ -644,7 +644,7 @@ add_action('wp_head', function () {
 
 // 特定ページのみ、Bootstrapのタグ出力を無効化する
 add_filter('style_loader_tag', function ($tag, $handle) {
-	$target_pages = array('cleaninglp', 'shuuri');
+	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
 
 	// LPページかつ、ハンドル名に 'bootstrap' が含まれる場合は空文字を返す
 	if (is_page($target_pages) && strpos($handle, 'bootstrap') !== false) {

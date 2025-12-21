@@ -413,6 +413,18 @@ table {
   }
 }
 
+.thanks p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.thanks--tel {
+  width: fit-content;
+  margin: 0 auto 15px;
+}
+.thanks--back {
+  text-decoration: underline;
+}
+
 .siteHeader,
 .siteFooter,
 .vk-mobile-nav-menu-btn,
