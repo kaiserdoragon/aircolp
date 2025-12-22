@@ -152,7 +152,7 @@
         width: 27px;
         height: 27px;
         content: "";
-        background: url(../airconimg/icon_check.png) no-repeat center center /contain;
+        background: url(../../airconimg/icon_check.png) no-repeat center center /contain;
         transform: translateY(-50%);
       }
     }
@@ -170,7 +170,7 @@
       width: 247px;
       height: 227px;
       content: "";
-      background: url(../airconimg/sign_person.png) no-repeat center center / contain;
+      background: url(../../airconimg/sign_person.png) no-repeat center center / contain;
     }
 
     @media (width <= 1280px) {
@@ -610,13 +610,13 @@
     &::before, {
       top: 0;
       left: 0;
-      background: url(../airconimg/case_star01.png) no-repeat center center/contain;
+      background: url(../../airconimg/case_star01.png) no-repeat center center/contain;
     }
 
     &::after {
       right: 0;
       bottom: 50px;
-      background: url(../airconimg/case_star02.png) no-repeat center center/contain;
+      background: url(../../airconimg/case_star02.png) no-repeat center center/contain;
     }
 
     @include max-mq {
@@ -853,7 +853,7 @@
       width: 18px;
       height: 26px;
       content: "";
-      background: url(../airconimg/icon_map.png) no-repeat center center / contain;
+      background: url(../../airconimg/icon_map.png) no-repeat center center / contain;
       transform: translateY(-50%);
     }
   }
