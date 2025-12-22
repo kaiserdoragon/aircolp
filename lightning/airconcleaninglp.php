@@ -10,9 +10,9 @@ Template Name: エアコンのクリーニングLP
     <div class="header--logo">
       <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
         <picture>
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo.avif" type="image/avif">
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo.webp" type="image/webp">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo.png"
+          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.avif" type="image/avif">
+          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.webp" type="image/webp">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.png"
             alt="株式会社トータルスマート"
             width="397" height="262"
             fetchpriority="high"
@@ -25,9 +25,9 @@ Template Name: エアコンのクリーニングLP
       <div class="header--btn-item">
         <a href="tel:052-932-5450" class="cv_button">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.avif" type="image/avif">
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.png"
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.avif" type="image/avif">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.webp" type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.png"
               alt="お電話でのご相談はこちら: 052-932-5450"
               width="355" height="90"
               decoding="async">
@@ -37,9 +37,9 @@ Template Name: エアコンのクリーニングLP
       <div class="header--btn-item">
         <a href="#contact" class="cv_button">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.avif" type="image/avif">
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.png"
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.avif" type="image/avif">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.webp" type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.png"
               alt="メールでお問い合わせ"
               width="355" height="90"
               decoding="async">
@@ -55,25 +55,25 @@ Template Name: エアコンのクリーニングLP
     <picture>
       <source
         media="(max-width: 767px)"
-        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mv_sp.avif"
+        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mv_sp.avif"
         type="image/avif">
       <source
         media="(max-width: 767px)"
-        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mv_sp.webp"
+        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mv_sp.webp"
         type="image/webp">
       <source
         media="(max-width: 767px)"
-        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mv_sp.jpg">
+        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mv_sp.jpg">
 
       <source
-        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mv.avif"
+        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mv.avif"
         type="image/avif">
       <source
-        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mv.webp"
+        srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mv.webp"
         type="image/webp">
 
       <img
-        src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mv.jpg"
+        src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mv.jpg"
         alt="エアコンクリーニングなら株式会社トータルスマート"
         width="1920" height="800"
         fetchpriority="high"
@@ -85,8 +85,8 @@ Template Name: エアコンのクリーニングLP
     <div class="contents -md">
       <h2>
         <picture>
-          <source media="(max-width: 767px)" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/lead_txt_sp.png">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/lead_txt.png" alt="愛知県・岐阜県・三重県・静岡県なら最短当日・即日での訪問も可能です。" width="621" height="114" decoding="async">
+          <source media="(max-width: 767px)" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/lead_txt_sp.png">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/lead_txt.png" alt="愛知県・岐阜県・三重県・静岡県なら最短当日・即日での訪問も可能です。" width="621" height="114" decoding="async">
         </picture>
       </h2>
       <div class="lead--inner">
@@ -100,18 +100,18 @@ Template Name: エアコンのクリーニングLP
             <div class="header--btn-item">
               <a href="tel:052-932-5450" class="cv_button">
                 <picture>
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.avif" type="image/avif">
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.png" alt="お電話でのご相談はこちら: 052-932-5450" width="355" height="90" decoding="async">
+                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.avif" type="image/avif">
+                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.webp" type="image/webp">
+                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.png" alt="お電話でのご相談はこちら: 052-932-5450" width="355" height="90" decoding="async">
                 </picture>
               </a>
             </div>
             <div class="header--btn-item">
               <a href="#contact" class="cv_button">
                 <picture>
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.avif" type="image/avif">
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.png" alt="メールでお問い合わせ" width="355" height="90" decoding="async">
+                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.avif" type="image/avif">
+                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.webp" type="image/webp">
+                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.png" alt="メールでお問い合わせ" width="355" height="90" decoding="async">
                 </picture>
               </a>
             </div>
@@ -147,16 +147,16 @@ Template Name: エアコンのクリーニングLP
   <section class="cvarea bg_blue">
     <div class="contents">
       <picture>
-        <source media="(max-width: 767px)" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/cvarea_sp.png">
-        <img class="cvarea--bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/cvarea.png" alt="エアコンクリーニングならトータルスマートにお任せください" width="1366" height="618" decoding="async">
+        <source media="(max-width: 767px)" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/cvarea_sp.png">
+        <img class="cvarea--bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/cvarea.png" alt="エアコンクリーニングならトータルスマートにお任せください" width="1366" height="618" decoding="async">
       </picture>
       <div class="header--btns">
         <div class="header--btn-item">
           <a href="tel:052-932-5450" class="cv_button">
             <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.avif" type="image/avif">
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/tel.png"
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.avif" type="image/avif">
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.webp" type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.png"
                 alt="お電話でのご相談はこちら: 052-932-5450"
                 width="355" height="90"
                 decoding="async">
@@ -166,9 +166,9 @@ Template Name: エアコンのクリーニングLP
         <div class="header--btn-item">
           <a href="#contact" class="cv_button">
             <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.avif" type="image/avif">
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/mail.png"
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.avif" type="image/avif">
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.webp" type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.png"
                 alt="メールでお問い合わせ"
                 width="355" height="90"
                 decoding="async">
@@ -185,23 +185,23 @@ Template Name: エアコンのクリーニングLP
       <ul>
         <li>
           <p>不具合の<br>早期発見</p>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_01.jpg" alt="" width="300" height="300">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/merit_01.jpg" alt="" width="300" height="300">
         </li>
         <li>
           <p>大きな故障の<br>防止</p>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_02.jpg" alt="" width="300" height="300">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/merit_02.jpg" alt="" width="300" height="300">
         </li>
         <li>
           <p>電気代の<br>削減</p>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_03.jpg" alt="" width="300" height="300">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/merit_03.jpg" alt="" width="300" height="300">
         </li>
         <li>
           <p>エアコンの<br>寿命UP</p>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_04.jpg" alt="" width="300" height="300">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/merit_04.jpg" alt="" width="300" height="300">
         </li>
         <li>
           <p>エアコンの<br>機能安定</p>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/merit_05.jpg" alt="" width="300" height="300">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/merit_05.jpg" alt="" width="300" height="300">
         </li>
       </ul>
     </div>
@@ -210,7 +210,7 @@ Template Name: エアコンのクリーニングLP
   <section class="select sec">
     <div class="contents">
       <h2>
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_logo.png" alt="株式会社トータルスマート" width="401" height="44" decoding="async">が<br>選ばれる<span>4</span>つの理由
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/select_logo.png" alt="株式会社トータルスマート" width="401" height="44" decoding="async">が<br>選ばれる<span>4</span>つの理由
       </h2>
 
       <ol>
@@ -218,7 +218,7 @@ Template Name: エアコンのクリーニングLP
           <h3>
             確かな技術力・品質
           </h3>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_01.jpg" alt="" width="400" height="250" decoding="async">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/select_01.jpg" alt="" width="400" height="250" decoding="async">
           <p>エアコン本体を分解し、アルミフィン・送風ファン・ドレンパンなど自分では触れない内部まで徹底洗浄します。
             お掃除機能付きエアコンにも対応しているので、ご自宅の機種も安心してお任せください。</p>
         </li>
@@ -226,7 +226,7 @@ Template Name: エアコンのクリーニングLP
           <h3>
             明確な料金体系
           </h3>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_02.jpg" alt="" width="400" height="250" decoding="async">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/select_02.jpg" alt="" width="400" height="250" decoding="async">
           <p>1台だけのご依頼から、複数台のご依頼まで、台数ごとのお得なセット料金をご用意しています。
             お掃除機能付きや室外機洗浄など、追加オプションも事前に料金をお伝えするため、当日になって突然金額が増えることはありません。</p>
         </li>
@@ -234,14 +234,14 @@ Template Name: エアコンのクリーニングLP
           <h3>
             スピード対応
           </h3>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_03.jpg" alt="" width="400" height="250" decoding="async">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/select_03.jpg" alt="" width="400" height="250" decoding="async">
           <p>移動時間を含めたスケジュール調整がしやすく、繁忙期を除けば最短当日〜数日以内のご訪問が可能です。</p>
         </li>
         <li>
           <h3>
             安心・安全への配慮
           </h3>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/select_04.jpg" alt="" width="400" height="250" decoding="async">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/select_04.jpg" alt="" width="400" height="250" decoding="async">
           <p>作業中の思わぬトラブルにも備え、損害賠償保険に加入しています。
             室内はビニールシートでしっかり養生し、壁や床・家具に水や汚れが飛び散らないよう配慮して作業します。</p>
         </li>
@@ -263,11 +263,11 @@ Template Name: エアコンのクリーニングLP
             アレルギー対策や、小さなお子様のいるご家庭にもおすすめです。</p>
           <div class="case--comparison">
             <div class="case--before">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_02.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_02.jpg" alt="" width="380" height="400" decoding="async">
               <p>BEFORE</p>
             </div>
             <div class="case--after">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_01.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_01.jpg" alt="" width="380" height="400" decoding="async">
               <p>AFTER</p>
             </div>
           </div>
@@ -285,11 +285,11 @@ Template Name: エアコンのクリーニングLP
           </p>
           <div class="case--comparison">
             <div class="case--before">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_03.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_03.jpg" alt="" width="380" height="400" decoding="async">
               <p>BEFORE</p>
             </div>
             <div class="case--after">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_04.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_04.jpg" alt="" width="380" height="400" decoding="async">
               <p>AFTER</p>
             </div>
           </div>
@@ -307,11 +307,11 @@ Template Name: エアコンのクリーニングLP
           </p>
           <div class="case--comparison">
             <div class="case--before">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_05.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_05.jpg" alt="" width="380" height="400" decoding="async">
               <p>BEFORE</p>
             </div>
             <div class="case--after">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/case_06.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_06.jpg" alt="" width="380" height="400" decoding="async">
               <p>AFTER</p>
             </div>
           </div>
@@ -325,7 +325,7 @@ Template Name: エアコンのクリーニングLP
       <h2 class="ttl">お客様からの評価も頂いています</h2>
       <div class="voice--inner">
         <div class="voice--item">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/voice_01.jpg" alt="" width="380" height="200" decoding="async">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/voice_01.jpg" alt="" width="380" height="200" decoding="async">
           <div>
             <h3>オフィスの空気が一気に軽くなりました</h3>
             <span>名古屋市　IT企業　A様</span>
@@ -336,7 +336,7 @@ Template Name: エアコンのクリーニングLP
             来客対応にも自信が持てるようになりました。</p>
         </div>
         <div class="voice--item">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/voice_02.jpg" alt="" width="380" height="200" decoding="async">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/voice_02.jpg" alt="" width="380" height="200" decoding="async">
           <div>
             <h3>「前より居心地がいい」と言われました</h3>
             <span>岐阜市　飲食店　I様</span>
@@ -347,7 +347,7 @@ Template Name: エアコンのクリーニングLP
             して快適な温度を保てています。</p>
         </div>
         <div class="voice--item">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/voice_03.jpg" alt="" width="380" height="200" decoding="async">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/voice_03.jpg" alt="" width="380" height="200" decoding="async">
           <div>
             <h3>「清潔感が増した」と評判です</h3>
             <span>四日市市　クリニック　T様</span>
@@ -372,7 +372,7 @@ Template Name: エアコンのクリーニングLP
             STEP1
           </span>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_01.jpg" alt="" width="180" height="100" decoding="async">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/flow_01.jpg" alt="" width="180" height="100" decoding="async">
             <dl>
               <dt>エアコンの分解</dt>
               <dd>パーツを分解して<br class="is-hidden_sp">
@@ -385,7 +385,7 @@ Template Name: エアコンのクリーニングLP
             STEP2
           </span>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_02.jpg" alt="" width="180" height="100" decoding="async">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/flow_02.jpg" alt="" width="180" height="100" decoding="async">
             <dl>
               <dt>ホコリ除去</dt>
               <dd>ホコリや汚れを<br class="is-hidden_sp">
@@ -398,7 +398,7 @@ Template Name: エアコンのクリーニングLP
             STEP3
           </span>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_03.jpg" alt="" width="180" height="100" decoding="async">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/flow_03.jpg" alt="" width="180" height="100" decoding="async">
             <dl>
               <dt>エアコン内部洗浄</dt>
               <dd>高圧洗浄機で<br class="is-hidden_sp">
@@ -411,7 +411,7 @@ Template Name: エアコンのクリーニングLP
             STEP4
           </span>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_04.jpg" alt="" width="180" height="100" decoding="async">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/flow_04.jpg" alt="" width="180" height="100" decoding="async">
             <dl>
               <dt>パーツの汚れ除去</dt>
               <dd>分解したパーツも<br class="is-hidden_sp">
@@ -424,7 +424,7 @@ Template Name: エアコンのクリーニングLP
             STEP5
           </span>
           <div>
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/flow_05.jpg" alt="" width="180" height="100" decoding="async">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/flow_05.jpg" alt="" width="180" height="100" decoding="async">
             <dl>
               <dt>最終確認</dt>
               <dd>正常に動くかの<br class="is-hidden_sp">
@@ -443,18 +443,18 @@ Template Name: エアコンのクリーニングLP
         <li>
           <div class="use--txt">
             <h3>お問い合わせ</h3>
-            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_01.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_01.jpg" alt="" width="250" height="250" decoding="async">
             <p>サービスの詳細、気になっている汚れやお掃除したい箇所についてなど、
               お電話またはメールフォームにてお気軽にお問い合わせください。</p>
           </div>
           <div>
-            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_01.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_01.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>ヒアリング</h3>
-            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_02.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_02.jpg" alt="" width="250" height="250" decoding="async">
             <p>
               お見積り訪問日時などを相談させていただきます。<br>
               ご希望のサービス内容を詳しくお伺いし、お掃除・お手伝いする
@@ -462,13 +462,13 @@ Template Name: エアコンのクリーニングLP
             </p>
           </div>
           <div>
-            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_02.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_02.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>お見積りご提示</h3>
-            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_03.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_03.jpg" alt="" width="250" height="250" decoding="async">
             <p>
               担当スタッフが訪問し、お掃除対象箇所を確認後無料でお見積りを
               ご提示します。<br>
@@ -476,38 +476,38 @@ Template Name: エアコンのクリーニングLP
             </p>
           </div>
           <div>
-            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_03.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_03.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>スケジュールの相談</h3>
-            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_04.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_04.jpg" alt="" width="250" height="250" decoding="async">
             <p>お見積りから正式にご依頼をいただいたのち、サービス実施日時やスケジュールについて相談させていただきます。</p>
           </div>
           <div>
-            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_04.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_04.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>サービス実施</h3>
-            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_05.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_05.jpg" alt="" width="250" height="250" decoding="async">
             <p>担当スタッフが訪問し、サービスを実施します。お見積り以上の請求が発生することはありませんが、追加のご要望などがあれば請求額が変わる場合もございます。</p>
           </div>
           <div>
-            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_05.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_05.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
         <li>
           <div class="use--txt">
             <h3>お支払い</h3>
-            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_06.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_06.jpg" alt="" width="250" height="250" decoding="async">
             <p>お支払い方法は現金・銀行振込・クレジットカードがご利用いただけます。 <br>
               銀行振込をご利用の場合の振込先はお見積りの際にご案内いたします。</p>
           </div>
           <div>
-            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/use_06.jpg" alt="" width="250" height="250" decoding="async">
+            <img class="is-hidden_sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/use_06.jpg" alt="" width="250" height="250" decoding="async">
           </div>
         </li>
       </ol>
@@ -518,7 +518,7 @@ Template Name: エアコンのクリーニングLP
   <section class="region sec">
     <div class="contents -md">
       <h2 class="ttl">対応エリア</h2>
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/map.png" alt="" width="518" height="534" decoding="async">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/map.png" alt="" width="518" height="534" decoding="async">
       <dl>
         <div>
           <dt>
@@ -648,9 +648,9 @@ Template Name: エアコンのクリーニングLP
       <div class="footer--logo">
         <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo_footer.avif" type="image/avif">
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo_footer.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/logo_footer.png"
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.avif" type="image/avif">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.webp" type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.png"
               alt="株式会社トータルスマート"
               width="397" height="84"
               decoding="async"
@@ -667,7 +667,7 @@ Template Name: エアコンのクリーニングLP
       </div>
     </div>
     <div class="footer--catch">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/airconimg/footer_catch.jpg" alt="トータルスマート" width="357" height="349" decoding="async">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/footer_catch.jpg" alt="トータルスマート" width="357" height="349" decoding="async">
     </div>
   </div>
   <p class="footer--copy"><small>Copyright© 株式会社トータルスマート All Rights Reserved.</small></p>

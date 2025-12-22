@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: エアコンクリーニングのサンクスページ
+Template Name: エアコンクリーニングLPのサンクスページ
 */
 ?>
 <?php get_header(); ?>
