@@ -275,3 +275,16 @@ main {
     }
   }
 }
+
+
+/* recaptcha badge */
+.grecaptcha-badge {
+  z-index: 9999;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .grecaptcha-badge {
+    margin-bottom: 0;
+  }
+}

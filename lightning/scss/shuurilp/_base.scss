@@ -59,7 +59,7 @@ main {
   }
 
   @include max-mq {
-    padding-top: 31%;
+    padding-top: 43%;
   }
 
 
@@ -273,5 +273,19 @@ main {
       align-items: center;
       margin-bottom: 40px;
     }
+  }
+}
+
+
+
+/* recaptcha badge */
+.grecaptcha-badge {
+  z-index: 9999;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .grecaptcha-badge {
+    margin-bottom: 0;
   }
 }
