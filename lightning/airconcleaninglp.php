@@ -179,6 +179,18 @@ Template Name: エアコンのクリーニングLP
     </div>
   </section>
 
+  <section class="price sec">
+    <div class="contents">
+      <span class="sign--catch">他社との比較でわかる！</span>
+      <h2>
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/select_logo.png" alt="株式会社トータルスマート" width="401" height="44" decoding="async">の<br>圧倒的なコスパ
+      </h2>
+      <div class="price--img js-scrollable">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/price.png" alt="" width="1509" height="834">
+      </div>
+    </div>
+  </section>
+
   <section class="merit sec bg_skyblue">
     <div class="contents -md">
       <h2>エアコンクリーニングをする<br><span>5</span>つのメリット</h2>
@@ -514,7 +526,6 @@ Template Name: エアコンのクリーニングLP
     </div>
   </section>
 
-
   <section class="region sec">
     <div class="contents -md">
       <h2 class="ttl">対応エリア</h2>
@@ -562,7 +573,6 @@ Template Name: エアコンのクリーニングLP
       </dl>
     </div>
   </section>
-
 
   <section class="faq sec bg_skyblue">
     <div class="contents -md">

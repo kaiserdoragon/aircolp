@@ -579,11 +579,10 @@ add_action('embed_head', 'lightning_embed_styles');
 
 
 
-
 // ---------------------------------------------
 //  エアコンのクリーニング・修理のLP専用
 // ---------------------------------------------
-// 1. 特定のページ（cleaninglp, shuuri）の制御
+// 1. 特定のページ（cleaninglp, shuuri, cleaning_thanks）の制御
 add_action('wp_enqueue_scripts', function () {
 	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
 
@@ -592,7 +591,7 @@ add_action('wp_enqueue_scripts', function () {
 		$bootstrap_handles = array(
 			'lightning-bootstrap',
 			'bootstrap-4',
-			'lightning-design-style', // Lightningのバージョンによってはこちら
+			'lightning-design-style',
 			'lightning-theme-style'
 		);
 
@@ -607,21 +606,35 @@ add_action('wp_enqueue_scripts', function () {
 		wp_dequeue_style('reset-css-css');
 		wp_dequeue_style('custom-css-main-css');
 
-		// --- JSの追加（defer ＋ footer両方指定） ---
+		// --- JSの追加 ---
+
+		// 1-1. scroll-hint JSの追加
+		wp_enqueue_script(
+			'scroll-hint-js',
+			'https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js',
+			array(),
+			null,
+			array(
+				'strategy'  => 'defer',
+				'in_footer' => true,
+			)
+		);
+
+		// 1-2. メインJSの追加（scroll-hint-jsに依存させる場合はarrayに指定）
 		wp_enqueue_script(
 			'custom-page-js',
 			esc_url(get_template_directory_uri() . '/cleaninglp/js/scripts.js'),
-			array('jquery'),
+			array('jquery', 'scroll-hint-js'), // scroll-hintの後に読み込むよう設定
 			'1.0.0',
 			array(
-				'strategy'  => 'defer', // バックグラウンドでダウンロード
-				'in_footer' => true,    // body閉じタグ直前に出力
+				'strategy'  => 'defer',
+				'in_footer' => true,
 			)
 		);
 	}
 }, 9999);
 
-// 2. 特定のページ（cleaninglp, shuuri）の <head> 内出力（CSS用）
+// 2. 特定のページ（cleaninglp, shuuri, cleaning_thanks）の <head> 内出力（CSS用）
 add_action('wp_head', function () {
 	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
 
@@ -631,6 +644,8 @@ add_action('wp_head', function () {
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
 
 		<link rel='stylesheet' id='reset-css-last' href='<?php echo esc_url($template_uri . '/cleaninglp/css/reset.css'); ?>' media='all' />
 		<link rel="preload" id="custom-css-last" href="<?php echo esc_url($template_uri . '/cleaninglp/css/style.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
@@ -646,13 +661,11 @@ add_action('wp_head', function () {
 add_filter('style_loader_tag', function ($tag, $handle) {
 	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
 
-	// LPページかつ、ハンドル名に 'bootstrap' が含まれる場合は空文字を返す
 	if (is_page($target_pages) && strpos($handle, 'bootstrap') !== false) {
 		return '';
 	}
 	return $tag;
 }, 999, 2);
-
 
 // Contact Form 7で自動挿入されるPタグ、brタグを削除
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');

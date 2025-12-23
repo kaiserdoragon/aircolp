@@ -271,6 +271,54 @@
   }
 }
 
+.price {
+  h2 {
+    margin-bottom: 60px;
+    font-size: var(--fz40);
+    font-weight: 900;
+    color: #004ba6;
+    text-align: center;
+
+    img {
+      vertical-align: baseline;
+    }
+  }
+
+  .sign--catch {
+    margin: 0 auto 40px;
+  }
+
+  // .price--img
+  &--img {
+    @include max-mq {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+
+      img {
+        display: block;
+        width: 180%;
+        max-width: none;
+      }
+    }
+  }
+
+  @include max-mq {
+    h2 {
+      margin-bottom: 40px;
+      font-size: var(--fz30);
+
+      img {
+        width: 70%;
+      }
+    }
+
+    .sign--catch {
+      margin: 0 auto 15px;
+    }
+  }
+}
+
 .merit {
   h2 {
     margin-bottom: 60px;

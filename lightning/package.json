@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "npm-run-all -p sass postcss",
-    "dev-sass": "sass ./scss/style.scss:./customcss/style.css ./scss/reset.scss:./customcss/reset.css --no-source-map --style expanded --watch",
+    "dev-sass": "sass ./scss/cleaninglp.scss:./cleaninglp/css/style.css ./scss/reset.scss:./cleaninglp/css/reset.css --no-source-map --style expanded --watch",
     "pro-sass": "sass ./scss/style.scss:./customcss/style.css ./scss/reset.scss:./customcss/reset.css --no-source-map --style compressed --watch",
     "dev-lp1-scss": "sass ./scss/cleaninglp.scss:./cleaninglp/css/style.css ./scss/reset.scss:./cleaninglp/css/reset.css --no-source-map --style expanded --watch",
     "pro-lp1-scss": "sass ./scss/cleaninglp.scss:./cleaninglp/css/style.css ./scss/reset.scss:./cleaninglp/css/reset.css --no-source-map --style compressed --watch",
