@@ -93,7 +93,7 @@ Template Name: エアコンのクリーニングLP
         <h3>エアコンクリーニングのご予約・ご相談はこちら</h3>
         <div class="lead--txt">
           <p>
-            <span>汚れ・カビ・ニオイ・効きの悪さ</span>が気になったら、<br>
+            <span>汚れ・カビ・ニオイ・効きの悪さ</span>が気になったら、<br class="is-hidden_sp">
             まずはお電話でお気軽にご相談ください。
           </p>
           <div class="header--btns">

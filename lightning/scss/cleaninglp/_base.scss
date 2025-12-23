@@ -52,14 +52,14 @@ body {
 
 main {
   display: block;
-  padding-top: 150px;
+  padding-top: 115px;
 
   @media (width <= 1180px) {
     padding-top: 250px;
   }
 
   @include max-mq {
-    padding-top: 43%;
+    padding-top: 30%;
   }
 
 

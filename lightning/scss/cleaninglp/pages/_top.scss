@@ -727,7 +727,12 @@
       margin-top: -15px;
     }
 
-    @include max-mq {
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    @include tb-mq {
       padding: 15px;
     }
   }

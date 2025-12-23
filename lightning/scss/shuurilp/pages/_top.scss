@@ -131,8 +131,13 @@
   &--list {
     position: relative;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 50px;
+    justify-content: center;
     max-width: 1000px;
-    padding: 40px;
+    padding: 60px 0;
     margin: auto;
     font-size: var(--fz23);
     background: #fff;
@@ -140,6 +145,7 @@
 
     li {
       position: relative;
+      width: min(380px, 100%);
       padding: 0 0 5px 40px;
       margin-bottom: 15px;
       border-bottom: 1px solid #b5b5b5;
@@ -223,50 +229,245 @@
   }
 }
 
+.attention {
+  background: url(../../shuurilp/img/attention_bg.jpg) no-repeat center center /cover;
+
+  h2 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+    font-size: var(--fz40);
+    font-weight: 800;
+    line-height: 2;
+    color: #fff;
+    text-align: center;
+  }
+
+  img {
+    margin-right: 15px;
+    vertical-align: sub;
+  }
+
+  // .attention--strong
+  &--strong {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+
+    &::after {
+      position: absolute;
+      top: -50px;
+      right: -110px;
+      width: 300px;
+      height: 400px;
+      content: "";
+      background: url(../../shuurilp/img/attention_preson.png) no-repeat center center / contain;
+    }
+
+    @include tb-mq {
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  // .attention--inner
+  &--inner {
+    max-width: 900px;
+    padding: 30px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    background: #000;
+  }
+
+  // .attention--lead
+  &--lead {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-size: var(--fz40);
+    font-weight: 900;
+    color: #f00;
+    text-align: center;
+    -webkit-text-stroke: 10px #fff;
+    paint-order: stroke fill;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      width: 70px;
+      height: 55px;
+      content: "";
+      background: url(../../shuurilp/img/icon_attention.png) no-repeat center center / contain;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      left: -80px;
+    }
+
+    &::after {
+      right: -80px;
+    }
+
+    @include max-mq {
+      font-size: var(--fz25);
+      -webkit-text-stroke: 8px #fff;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  // .attention--lead
+  &--txt {
+    margin-bottom: 30px;
+    font-size: var(--fz25);
+    font-weight: 800;
+
+    span {
+      color: #f00;
+    }
+
+    &.-sm {
+      margin-bottom: 0;
+      font-size: var(--fz20);
+      font-weight: 600;
+    }
+
+    @include max-mq {
+      font-size: var(--fz20);
+
+      &.-sm {
+        font-size: var(--fz18);
+      }
+    }
+  }
+
+  @include max-mq {
+    h2 {
+      font-size: var(--fz30);
+    }
+
+    img {
+      width: 80%;
+      margin-right: 0;
+    }
+  }
+}
+
 .cvarea {
-  padding: 80px 0 0;
+  p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    font-size: var(--fz45);
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 10px #004bb1;
+    paint-order: stroke fill;
+  }
 
   .contents {
-    position: relative;
+    width: min(1350px, 100%);
   }
 
   .header--btns {
     position: absolute;
-    bottom: 16%;
-    left: 8%;
+    top: 63%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
   }
 
-  // cvarea--bg
+  // .cvarea--bg
   &--bg {
     width: 100%;
 
-    @include max-mq {
+    @include tb-mq {
       width: 100%;
       margin-bottom: 30px;
     }
   }
 
-  @media (width <= 1280px) {
-    .header--btns {
-      bottom: 10%;
-      left: 5%;
+  // .cvarea--lead
+  &--lead {
+    position: relative;
+  }
+
+  // .cvarea--inner
+  &--inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 60px;
+    column-gap: 15px;
+    width: min(1200px, 100%);
+    margin: auto;
+
+    div {
+      position: relative;
+      padding: 30px;
+      background: #fff;
+      border: 4px solid #004ba6;
+      box-shadow: 6.293px 7.771px 25px 0 rgb(111 52 0 / 40%);
+    }
+
+    span {
+      position: absolute;
+      top: -24px;
+      left: 50%;
+      width: min(180px, 100%);
+      padding: 3px;
+      font-size: var(--fz25);
+      font-weight: 800;
+      color: #fff700;
+      text-align: center;
+      background: #00479d;
+      transform: translateX(-50%);
+    }
+
+    @include max-mq {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 35px;
+      column-gap: 10px;
+
+      div {
+        padding: 5px;
+      }
+
+      span {
+        top: -20px;
+        width: 70%;
+        font-size: var(--fz20);
+      }
     }
   }
 
-  @media (width <= 1024px) {
-    .header--btns {
-      bottom: 0%;
-    }
-  }
-
-  @include max-mq {
+  @include tb-mq {
     padding: 60px 0;
 
+    .header--btns,
+    p {
+      position: static;
+      transform: none;
+    }
+
     .header--btns {
-      position: relative;
-      left: auto;
-      flex-direction: column;
-      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      font-size: var(--fz28);
+      -webkit-text-stroke: 5px #004bb1;
     }
   }
 }
@@ -723,6 +924,11 @@
       text-align: center;
     }
 
+    img {
+      display: block;
+      margin: auto;
+    }
+
     p {
       margin-top: -15px;
     }
@@ -959,6 +1165,12 @@
           text-indent: 0;
         }
       }
+    }
+  }
+
+  div {
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
     }
   }
 
