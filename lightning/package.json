@@ -8,6 +8,8 @@
     "pro-sass": "sass ./scss/style.scss:./customcss/style.css ./scss/reset.scss:./customcss/reset.css --no-source-map --style compressed --watch",
     "dev-lp1-scss": "sass ./scss/cleaninglp.scss:./cleaninglp/css/style.css ./scss/reset.scss:./cleaninglp/css/reset.css --no-source-map --style expanded --watch",
     "pro-lp1-scss": "sass ./scss/cleaninglp.scss:./cleaninglp/css/style.css ./scss/reset.scss:./cleaninglp/css/reset.css --no-source-map --style compressed --watch",
+    "dev-lp2-scss": "sass ./scss/shuurilp.scss:./shuurilp/css/style.css ./scss/reset.scss:./shuurilp/css/reset.css --no-source-map --style expanded --watch",
+    "pro-lp2-scss": "sass ./scss/shuurilp.scss:./shuurilp/css/style.css ./scss/reset.scss:./shuurilp/css/reset.css --no-source-map --style compressed --watch",
     "postcss": "postcss --use autoprefixer --no-map  ./css/style.min.css -o ./css/style.min.css --watch",
     "howto": " コンパイル時にベンダープレフィクスを付与できます「npm run watch」 | sassのコンパイルのみを行います「npm run sass」| ベンダープレフィックスを付与します「npm run postcss」",
     "test": "stylelint --fix **/*.{css,scss,sass} --custom-syntax postcss-scss",

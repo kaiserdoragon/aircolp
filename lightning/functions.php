@@ -582,9 +582,9 @@ add_action('embed_head', 'lightning_embed_styles');
 // ---------------------------------------------
 //  エアコンのクリーニング・修理のLP専用
 // ---------------------------------------------
-// 1. 特定のページ（cleaninglp, shuuri, cleaning_thanks）の制御
+// 1. 特定のページ（cleaninglp, shuurilp, cleaning_thanks）の制御
 add_action('wp_enqueue_scripts', function () {
-	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
+	$target_pages = array('cleaninglp', 'shuurilp', 'cleaning_thanks', 'shuuri_thanks');
 
 	if (is_page($target_pages)) {
 		// --- Bootstrap関連を根こそぎ解除する ---
@@ -620,46 +620,83 @@ add_action('wp_enqueue_scripts', function () {
 			)
 		);
 
-		// 1-2. メインJSの追加（scroll-hint-jsに依存させる場合はarrayに指定）
-		wp_enqueue_script(
-			'custom-page-js',
-			esc_url(get_template_directory_uri() . '/cleaninglp/js/scripts.js'),
-			array('jquery', 'scroll-hint-js'), // scroll-hintの後に読み込むよう設定
-			'1.0.0',
-			array(
-				'strategy'  => 'defer',
-				'in_footer' => true,
-			)
-		);
+		if (is_page('cleaninglp') || is_page('cleaning_thanks')) {
+			// 1-2. メインJSの追加（scroll-hint-jsに依存させる場合はarrayに指定）
+			wp_enqueue_script(
+				'cleaninglp-js',
+				esc_url(get_template_directory_uri() . '/cleaninglp/js/scripts.js'),
+				array('jquery', 'scroll-hint-js'), // scroll-hintの後に読み込むよう設定
+				'1.0.0',
+				array(
+					'strategy'  => 'defer',
+					'in_footer' => true,
+				)
+			);
+		} elseif (is_page('shuurilp') || is_page('shuuri_thanks')) {
+			wp_enqueue_script(
+				'shuurilp-js',
+				esc_url(get_template_directory_uri() . '/shuurilp/js/scripts.js'),
+				array('jquery', 'scroll-hint-js'), // scroll-hintの後に読み込むよう設定
+				'1.0.0',
+				array(
+					'strategy'  => 'defer',
+					'in_footer' => true,
+				)
+			);
+		}
 	}
 }, 9999);
 
-// 2. 特定のページ（cleaninglp, shuuri, cleaning_thanks）の <head> 内出力（CSS用）
-add_action('wp_head', function () {
-	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
+
+// 特定のページ専用のCSSを読み込む
+add_action('wp_enqueue_scripts', function () {
+	// 対象となるページスラッグ
+	$target_pages = array('cleaninglp', 'shuurilp', 'cleaning_thanks', 'shuuri_thanks');
 
 	if (is_page($target_pages)) {
 		$template_uri = get_template_directory_uri();
-?>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+		// 1. Google Fonts の読み込み
+		wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap', array(), null);
 
-		<link rel='stylesheet' id='reset-css-last' href='<?php echo esc_url($template_uri . '/cleaninglp/css/reset.css'); ?>' media='all' />
-		<link rel="preload" id="custom-css-last" href="<?php echo esc_url($template_uri . '/cleaninglp/css/style.css'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all">
-		<noscript>
-			<link rel="stylesheet" href="<?php echo esc_url($template_uri . '/cleaninglp/style.css'); ?>">
-		</noscript>
-<?php
+		// 2. Scroll Hint CSS
+		wp_enqueue_style('scroll-hint', 'https://unpkg.com/scroll-hint@latest/css/scroll-hint.css', array(), null);
+
+		// 3. ページごとに読み込むフォルダを判定
+		$folder = '';
+		if (is_page('cleaninglp') || is_page('cleaning_thanks')) {
+			$folder = 'cleaninglp';
+		} elseif (is_page('shuurilp') || is_page('shuuri_thanks')) {
+			$folder = 'shuurilp';
+		}
+
+		// 判定されたフォルダがある場合のみ読み込み
+		if ($folder) {
+			// リセットCSS
+			wp_enqueue_style($folder . '-reset', $template_uri . '/' . $folder . '/css/reset.css', array(), null);
+
+			// メインCSS（ハンドル名を一意にする）
+			wp_enqueue_style($folder . '-style', $template_uri . '/' . $folder . '/css/style.css', array($folder . '-reset'), null);
+		}
 	}
-}, 99999);
+}, 9999);
+
+/**
+ * メインCSSのみ preload 属性を付与するカスタマイズ
+ */
+add_filter('style_loader_tag', function ($tag, $handle, $href, $media) {
+	// 上記で指定したハンドル名（cleaninglp-style または shuurilp-style）に合致する場合
+	if (strpos($handle, '-style') !== false && (strpos($handle, 'cleaninglp') !== false || strpos($handle, 'shuurilp') !== false)) {
+		return '<link rel="preload" href="' . $href . '" as="style" onload="this.onload=null;this.rel=\'stylesheet\'" id="' . $handle . '">' .
+			'<noscript><link rel="stylesheet" href="' . $href . '"></noscript>';
+	}
+	return $tag;
+}, 10, 4);
 
 
 // 特定ページのみ、Bootstrapのタグ出力を無効化する
 add_filter('style_loader_tag', function ($tag, $handle) {
-	$target_pages = array('cleaninglp', 'shuuri', 'cleaning_thanks');
+	$target_pages = array('cleaninglp', 'shuurilp', 'cleaning_thanks', 'shuuri_thanks');
 
 	if (is_page($target_pages) && strpos($handle, 'bootstrap') !== false) {
 		return '';

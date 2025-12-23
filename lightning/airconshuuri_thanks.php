@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: エアコンクリーニングLPのサンクスページ
+Template Name: エアコン修理LPのサンクスページ
 */
 ?>
 <?php get_header(); ?>
@@ -10,9 +10,9 @@ Template Name: エアコンクリーニングLPのサンクスページ
     <div class="header--logo">
       <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
         <picture>
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.avif" type="image/avif">
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.webp" type="image/webp">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.png"
+          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo.avif" type="image/avif">
+          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo.webp" type="image/webp">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo.png"
             alt="株式会社トータルスマート"
             width="397" height="262"
             fetchpriority="high"
@@ -25,9 +25,9 @@ Template Name: エアコンクリーニングLPのサンクスページ
       <div class="header--btn-item">
         <a href="tel:052-932-5450" class="cv_button">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.avif" type="image/avif">
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.png"
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/tel.avif" type="image/avif">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/tel.webp" type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/tel.png"
               alt="お電話でのご相談はこちら: 052-932-5450"
               width="355" height="90"
               decoding="async">
@@ -37,9 +37,9 @@ Template Name: エアコンクリーニングLPのサンクスページ
       <div class="header--btn-item">
         <a href="#contact" class="cv_button">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.avif" type="image/avif">
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.png"
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/mail.avif" type="image/avif">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/mail.webp" type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/mail.png"
               alt="メールでお問い合わせ"
               width="355" height="90"
               decoding="async">
@@ -65,9 +65,9 @@ Template Name: エアコンクリーニングLPのサンクスページ
       <div class="thanks--tel">
         <a href="tel:052-932-5450" class="cv_button">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.avif" type="image/avif">
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.png"
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/tel.avif" type="image/avif">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/tel.webp" type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/tel.png"
               alt="お電話でのご相談はこちら: 052-932-5450"
               width="355" height="90"
               decoding="async">
@@ -75,7 +75,7 @@ Template Name: エアコンクリーニングLPのサンクスページ
         </a>
       </div>
 
-      <a class="thanks--back" href="<?php echo esc_url(home_url('/cleaninglp/')); ?>">ページのTOPに戻る</a>
+      <a class="thanks--back" href="<?php echo esc_url(home_url('/shuurilp/')); ?>">ページのTOPに戻る</a>
     </div>
   </section>
 </main>
@@ -91,9 +91,9 @@ Template Name: エアコンクリーニングLPのサンクスページ
       <div class="footer--logo">
         <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.avif" type="image/avif">
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.png"
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo_footer.avif" type="image/avif">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo_footer.webp" type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo_footer.png"
               alt="株式会社トータルスマート"
               width="397" height="84"
               decoding="async"
@@ -110,7 +110,7 @@ Template Name: エアコンクリーニングLPのサンクスページ
       </div>
     </div>
     <div class="footer--catch">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/footer_catch.jpg" alt="トータルスマート" width="357" height="349" decoding="async">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/footer_catch.jpg" alt="トータルスマート" width="357" height="349" decoding="async">
     </div>
   </div>
   <p class="footer--copy"><small>Copyright© 株式会社トータルスマート All Rights Reserved.</small></p>
