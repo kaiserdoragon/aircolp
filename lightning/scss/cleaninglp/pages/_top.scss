@@ -962,6 +962,12 @@
     }
   }
 
+  div {
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+
   @include max-mq {
     dt {
       padding: 15px;
