@@ -9,6 +9,7 @@ Template Name: エアコンのクリーニングLP
   <div class="contents">
     <div class="header--logo">
       <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
+        <p>トータルスマート株式会社は愛知県・岐阜県・三重県・静岡県でオフィスに係ること全てトータルで依頼可能！</p>
         <picture>
           <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.avif" type="image/avif">
           <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.webp" type="image/webp">
@@ -666,6 +667,7 @@ Template Name: エアコンのクリーニングLP
               decoding="async"
               itemprop="logo">
           </picture>
+          <p>トータルスマート株式会社は愛知県・岐阜県・三重県・静岡県でオフィスに係ること全てトータルで依頼可能！</p>
         </a>
       </div>
       <div class="footer--info">

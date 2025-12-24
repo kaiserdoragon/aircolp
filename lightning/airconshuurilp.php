@@ -10,6 +10,7 @@ Template Name: エアコンの修理LP
   <div class="contents">
     <div class="header--logo">
       <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
+        <p>トータルスマート株式会社は愛知県・岐阜県・三重県・静岡県でオフィスに係ること全てトータルで依頼可能！</p>
         <picture>
           <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo.avif" type="image/avif">
           <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo.webp" type="image/webp">
@@ -137,7 +138,7 @@ Template Name: エアコンの修理LP
         <li>エアコンが<span>突然動かなくなった</span></li>
         <li>エアコンから<span>変な臭いがする</span></li>
         <li>冷房・暖房の<span>効きが悪い</span></li>
-        <li>天井カセットから<span>室外機</span></li>
+        <li>天井カセットから<span>水が垂れてくる</span></li>
         <li><span>室外機</span>がちゃんと動いていない</li>
         <li>フロアの一部だけ<span>冷えていない</span></li>
       </ul>
@@ -235,34 +236,35 @@ Template Name: エアコンの修理LP
       <ol>
         <li>
           <h3>
-            確かな技術力・品質
+            最短当日訪問
           </h3>
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/select_01.jpg" alt="" width="400" height="250" decoding="async">
-          <p>エアコン本体を分解し、アルミフィン・送風ファン・ドレンパンなど自分では触れない内部まで徹底洗浄します。
-            お掃除機能付きエアコンにも対応しているので、ご自宅の機種も安心してお任せください。</p>
+          <p>スケジュールの組み方を工夫することで「最短当日訪問」が実現可能です。<br>
+            急なご依頼に対応できる枠をあらかじめ確保しているのが特徴です。</p>
         </li>
         <li>
           <h3>
-            明確な料金体系
+            親切・丁寧
           </h3>
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/select_02.jpg" alt="" width="400" height="250" decoding="async">
-          <p>1台だけのご依頼から、複数台のご依頼まで、台数ごとのお得なセット料金をご用意しています。
-            お掃除機能付きや室外機洗浄など、追加オプションも事前に料金をお伝えするため、当日になって突然金額が増えることはありません。</p>
+          <p>専門用語をなるべく使わずに、わかりやすい言葉でご説明することを徹底しています。<br>
+            安心してお任せいただける対応を心がけています。</p>
         </li>
         <li>
           <h3>
-            スピード対応
+            見積り無料
           </h3>
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/select_03.jpg" alt="" width="400" height="250" decoding="async">
-          <p>移動時間を含めたスケジュール調整がしやすく、繁忙期を除けば最短当日〜数日以内のご訪問が可能です。</p>
+          <p>作業前に必ず見積りを提示します。作業前に、故障箇所と修理内容・料金をわかりやすくご説明しご納得いただいてから作業に入ります。</p>
         </li>
         <li>
           <h3>
-            安心・安全への配慮
+            業界最安値
           </h3>
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/select_04.jpg" alt="" width="400" height="250" decoding="async">
-          <p>作業中の思わぬトラブルにも備え、損害賠償保険に加入しています。
-            室内はビニールシートでしっかり養生し、壁や床・家具に水や汚れが飛び散らないよう配慮して作業します。</p>
+          <p>完全自社施工だから低価格！<br>
+            余計な費用が一切掛かりません。
+            余分なコストを徹底的に削減し、業界最安値を目指します。</p>
         </li>
       </ol>
     </div>
@@ -502,12 +504,10 @@ Template Name: エアコンの修理LP
     </div>
   </section>
 </main>
-
 <div class="footer_btn_fixed" id="js_fixed-btn">
   <p class="footer_btn_fixed--tel"><a href="tel:052-932-5450">電話で予約する</a></p>
   <p class="footer_btn_fixed--mail"><a href="#contact">メールで無料見積り</a></p>
 </div>
-
 <footer class="footer">
   <div class="contents -md">
     <div>
@@ -522,6 +522,7 @@ Template Name: エアコンの修理LP
               decoding="async"
               itemprop="logo">
           </picture>
+          <p>トータルスマート株式会社は愛知県・岐阜県・三重県・静岡県でオフィスに係ること全てトータルで依頼可能！</p>
         </a>
       </div>
       <div class="footer--info">
@@ -538,5 +539,4 @@ Template Name: エアコンの修理LP
   </div>
   <p class="footer--copy"><small>Copyright© 株式会社トータルスマート All Rights Reserved.</small></p>
 </footer>
-
 <?php get_footer(); ?>
