@@ -58,8 +58,12 @@ main {
     padding-top: 285px;
   }
 
+  @include max-mq {
+    padding-top: 40vw;
+  }
+
   @media (width <= 485px) {
-    padding-top: 220px;
+    padding-top: 47vw;
   }
 
   @media (min-width: 768px) and (max-width: 769px) and (orientation: portrait) {
