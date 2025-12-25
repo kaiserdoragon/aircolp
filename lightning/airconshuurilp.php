@@ -2,14 +2,51 @@
 /*
 Template Name: エアコンの修理LP
 */
+defined('ABSPATH') || exit;
+
+/**
+ * JSON-LD（構造化データ）
+ * - microdataは使わずJSON-LDのみ
+ * - URLは esc_url_raw()（表示用のエンティティ変換をしない）
+ * - wp_head に出力
+ */
+$home_url = esc_url_raw(home_url('/'));
+
+$logo_url = esc_url_raw(get_theme_file_uri('cleaninglp/img/logo.png'));
+$mv_url   = esc_url_raw(get_theme_file_uri('cleaninglp/img/mv.jpg'));
+
+$ld_json = [
+  '@context'   => 'https://schema.org',
+  '@type'      => 'LocalBusiness',
+  '@id'        => $home_url . '#localbusiness',
+  'name'       => '株式会社トータルスマート',
+  'url'        => $home_url,
+  'telephone'  => '+81-52-932-5450',
+  'logo'       => $logo_url,
+  'image'      => [$mv_url],
+  'address'    => [
+    '@type'           => 'PostalAddress',
+    'postalCode'      => '461-0002',
+    'addressRegion'   => '愛知県',
+    'addressLocality' => '名古屋市東区',
+    'streetAddress'   => '代官町16-17 アーク代官町ビルディング2F',
+  ],
+  'areaServed' => ['愛知県', '岐阜県', '三重県', '静岡県'],
+];
+
+add_action('wp_head', static function () use ($ld_json) {
+  echo "\n" . '<script type="application/ld+json">'
+    . wp_json_encode($ld_json, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)
+    . '</script>' . "\n";
+}, 1);
+
+get_header();
 ?>
 
-<?php get_header(); ?>
-
-<header class="header" itemscope itemtype="https://schema.org/Organization">
+<header class="header">
   <div class="contents">
     <div class="header--logo">
-      <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
+      <a href="<?php echo esc_url(home_url('/')); ?>">
         <p>トータルスマート株式会社は愛知県・岐阜県・三重県・静岡県でオフィスに係ること全てトータルで依頼可能！</p>
         <picture>
           <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo.avif" type="image/avif">
@@ -18,8 +55,7 @@ Template Name: エアコンの修理LP
             alt="株式会社トータルスマート"
             width="397" height="262"
             fetchpriority="high"
-            decoding="async"
-            itemprop="logo">
+            decoding="async">
         </picture>
       </a>
     </div>
@@ -512,15 +548,14 @@ Template Name: エアコンの修理LP
   <div class="contents -md">
     <div>
       <div class="footer--logo">
-        <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo_footer.avif" type="image/avif">
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo_footer.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/shuurilp/img/logo_footer.png"
               alt="株式会社トータルスマート"
               width="397" height="84"
-              decoding="async"
-              itemprop="logo">
+              decoding="async">
           </picture>
           <p>トータルスマート株式会社は愛知県・岐阜県・三重県・静岡県でオフィスに係ること全てトータルで依頼可能！</p>
         </a>
