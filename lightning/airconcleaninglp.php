@@ -2,27 +2,75 @@
 /*
 Template Name: エアコンのクリーニングLP
 */
-?>
-<?php get_header(); ?>
+defined('ABSPATH') || exit;
 
-<header class="header" itemscope itemtype="https://schema.org/Organization">
+/**
+ * JSON-LD（構造化データ）
+ * - microdataは使わずJSON-LDのみ
+ * - URLは esc_url_raw()（表示用のエンティティ変換をしない）
+ * - wp_head に出力
+ */
+$home_url = esc_url_raw(home_url('/'));
+
+$logo_url = esc_url_raw(get_theme_file_uri('cleaninglp/img/logo.png'));
+$mv_url   = esc_url_raw(get_theme_file_uri('cleaninglp/img/mv.jpg'));
+
+$ld_json = [
+  '@context'   => 'https://schema.org',
+  '@type'      => 'LocalBusiness',
+  '@id'        => $home_url . '#localbusiness',
+  'name'       => '株式会社トータルスマート',
+  'url'        => $home_url,
+  'telephone'  => '+81-52-932-5450',
+  'logo'       => $logo_url,
+  'image'      => [$mv_url],
+  'address'    => [
+    '@type'           => 'PostalAddress',
+    'postalCode'      => '461-0002',
+    'addressRegion'   => '愛知県',
+    'addressLocality' => '名古屋市東区',
+    'streetAddress'   => '代官町16-17 アーク代官町ビルディング2F',
+  ],
+  'areaServed' => ['愛知県', '岐阜県', '三重県', '静岡県'],
+];
+
+add_action('wp_head', static function () use ($ld_json) {
+  echo "\n" . '<script type="application/ld+json">'
+    . wp_json_encode($ld_json, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)
+    . '</script>' . "\n";
+}, 1);
+
+// 表示用URL（HTML出力は esc_url）
+$home_link = esc_url(home_url('/'));
+
+// 画像URL生成（HTML出力は esc_url）
+$asset = static function (string $file): string {
+  return esc_url(get_theme_file_uri('cleaninglp/img/' . ltrim($file, '/')));
+};
+
+get_header();
+?>
+
+
+<header class="header">
   <div class="contents">
-    <div class="header--logo">
-      <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
+    <section class="header--logo">
+      <a href="<?php echo esc_url(home_url('/')); ?>">
         <p>トータルスマート株式会社は愛知県・岐阜県・三重県・静岡県でオフィスに係ること全てトータルで依頼可能！</p>
-        <picture>
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.avif" type="image/avif">
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.webp" type="image/webp">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.png"
-            alt="株式会社トータルスマート"
-            width="397" height="262"
-            fetchpriority="high"
-            loading="eager"
-            decoding="async"
-            itemprop="logo">
-        </picture>
+        <h1>
+          <picture>
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.avif" type="image/avif">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.webp" type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo.png"
+              alt="株式会社トータルスマート"
+              width="397" height="262"
+              fetchpriority="high"
+              loading="eager"
+              decoding="async">
+          </picture>
+        </h1>
       </a>
-    </div>
+    </section>
     <div class="header--btns">
       <div class="header--btn-item">
         <a href="tel:052-932-5450" class="cv_button gtm-click-tel">
@@ -90,14 +138,22 @@ Template Name: エアコンのクリーニングLP
       <div class="catch--inner">
         <div class="catch--item">
           <span>家庭用エアコン</span>
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/catch_01.jpg"
-            alt="家庭用エアコンのクリーニング" width="430" height="271"
-            loading="lazy" decoding="async">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/catch_01.jpg" alt="家庭用エアコン" width="430" height="271" decoding="async">
           <div class="catch--price">
             <p>8<span class="catch--period">,</span>000</p><span class="catch--unit"><span class="catch--jpy">円～</span><span class="catch--tax">（税込）</span></span>
           </div>
         </div>
+        <div class="catch--item">
+          <span>業務用エアコン</span>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/catch_02.jpg" alt="業務用エアコン" width="430" height="271" decoding="async">
+          <div class="catch--price">
+            <p>18<span class="catch--period">,</span>000</p><span class="catch--unit"><span class="catch--jpy">円～</span><span class="catch--tax">（税込）</span></span>
+          </div>
+        </div>
       </div>
+      <p class="catch--txt">エアコンのクリーニングは<br class="is-hidden_pc">全てお任せ下さい。</p>
+      <p>エアコンの専門の技術スタッフが、<br class="is-hidden_sp">
+        エアコンの悩みを解消します！</p>
     </div>
   </section>
 
@@ -206,7 +262,7 @@ Template Name: エアコンのクリーニングLP
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/select_logo.png" alt="株式会社トータルスマート" width="401" height="44" decoding="async">の<br>圧倒的なコスパ
       </h2>
       <div class="price--img js-scrollable">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/price.png" alt="" width="1509" height="834">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/price.png" alt="エアコンクリーニングの比較料金表" width="1509" height="834">
       </div>
     </div>
   </section>
@@ -295,11 +351,11 @@ Template Name: エアコンのクリーニングLP
             アレルギー対策や、小さなお子様のいるご家庭にもおすすめです。</p>
           <div class="case--comparison">
             <div class="case--before">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_02.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_02.jpg" alt="エアコンクリーニングの前の画像" width="380" height="400" decoding="async">
               <p>BEFORE</p>
             </div>
             <div class="case--after">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_01.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_01.jpg" alt="エアコンクリーニングの後の画像" width="380" height="400" decoding="async">
               <p>AFTER</p>
             </div>
           </div>
@@ -317,11 +373,11 @@ Template Name: エアコンのクリーニングLP
           </p>
           <div class="case--comparison">
             <div class="case--before">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_03.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_03.jpg" alt="エアコンクリーニングの前の画像" width="380" height="400" decoding="async">
               <p>BEFORE</p>
             </div>
             <div class="case--after">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_04.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_04.jpg" alt="エアコンクリーニングの後の画像" width="380" height="400" decoding="async">
               <p>AFTER</p>
             </div>
           </div>
@@ -339,11 +395,11 @@ Template Name: エアコンのクリーニングLP
           </p>
           <div class="case--comparison">
             <div class="case--before">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_05.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_05.jpg" alt="エアコンクリーニングの前の画像" width="380" height="400" decoding="async">
               <p>BEFORE</p>
             </div>
             <div class="case--after">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_06.jpg" alt="" width="380" height="400" decoding="async">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/case_06.jpg" alt="エアコンクリーニングの後の画像" width="380" height="400" decoding="async">
               <p>AFTER</p>
             </div>
           </div>
@@ -676,15 +732,14 @@ Template Name: エアコンのクリーニングLP
   <div class="contents -md">
     <div>
       <div class="footer--logo">
-        <a href="<?php echo esc_url(home_url('/')); ?>" itemprop="url">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.avif" type="image/avif">
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.webp" type="image/webp">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/logo_footer.png"
               alt="株式会社トータルスマート"
               width="397" height="84"
-              decoding="async"
-              itemprop="logo">
+              decoding="async">
           </picture>
           <p>トータルスマート株式会社は愛知県・岐阜県・三重県・静岡県でオフィスに係ること全てトータルで依頼可能！</p>
         </a>
