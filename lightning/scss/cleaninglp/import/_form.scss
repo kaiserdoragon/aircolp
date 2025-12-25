@@ -169,7 +169,8 @@
   // .contact_form--btn
   &--btn {
     display: block;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     padding: 10px 0;
     margin: 60px auto 0;
     overflow: hidden;

@@ -17,6 +17,7 @@ Template Name: エアコンのクリーニングLP
             alt="株式会社トータルスマート"
             width="397" height="262"
             fetchpriority="high"
+            loading="eager"
             decoding="async"
             itemprop="logo">
         </picture>
@@ -24,7 +25,7 @@ Template Name: エアコンのクリーニングLP
     </div>
     <div class="header--btns">
       <div class="header--btn-item">
-        <a href="tel:052-932-5450" class="cv_button">
+        <a href="tel:052-932-5450" class="cv_button gtm-click-tel">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.avif" type="image/avif">
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/tel.webp" type="image/webp">
@@ -36,7 +37,7 @@ Template Name: エアコンのクリーニングLP
         </a>
       </div>
       <div class="header--btn-item">
-        <a href="#contact" class="cv_button">
+        <a href="#contact" class="cv_button gtm-click-mail">
           <picture>
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.avif" type="image/avif">
             <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/mail.webp" type="image/webp">
@@ -78,9 +79,27 @@ Template Name: エアコンのクリーニングLP
         alt="エアコンクリーニングなら株式会社トータルスマート"
         width="1920" height="800"
         fetchpriority="high"
+        loading="eager"
         decoding="async">
     </picture>
   </div>
+
+  <section class="catch sec -sm">
+    <div class="contents">
+      <h2>業界最安値に<br class="is-hidden_pc">挑戦</h2>
+      <div class="catch--inner">
+        <div class="catch--item">
+          <span>家庭用エアコン</span>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/cleaninglp/img/catch_01.jpg"
+            alt="家庭用エアコンのクリーニング" width="430" height="271"
+            loading="lazy" decoding="async">
+          <div class="catch--price">
+            <p>8<span class="catch--period">,</span>000</p><span class="catch--unit"><span class="catch--jpy">円～</span><span class="catch--tax">（税込）</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="lead sec -sm bg_blue">
     <div class="contents -md">

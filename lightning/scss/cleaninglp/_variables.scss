@@ -20,7 +20,7 @@ $font-yumin: "YuMincho", "Yu Mincho", "游明朝体", "Hiragino Mincho Pro", "�
 :root {
   --invariants: 2.5; //初期値2.5
 
-  @for $var from 10 through 100 {
+  @for $var from 10 through 150 {
     --fz#{$var}: min(calc(0.1rem * #{$var}), calc(0.1vw * #{$var} * var(--invariants)));
   }
 }
