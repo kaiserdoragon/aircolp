@@ -40,14 +40,6 @@ add_action('wp_head', static function () use ($ld_json) {
     . '</script>' . "\n";
 }, 1);
 
-// 表示用URL（HTML出力は esc_url）
-$home_link = esc_url(home_url('/'));
-
-// 画像URL生成（HTML出力は esc_url）
-$asset = static function (string $file): string {
-  return esc_url(get_theme_file_uri('cleaninglp/img/' . ltrim($file, '/')));
-};
-
 get_header();
 ?>
 
